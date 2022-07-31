@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/react-pizza-v2/static/css/main.502ae0e0.css",
+    "main.js": "/react-pizza-v2/static/js/main.b1d7a151.js",
+    "NotFoundPage.css": "/react-pizza-v2/static/css/NotFoundPage.1d6711e1.chunk.css",
+    "NotFoundPage.js": "/react-pizza-v2/static/js/NotFoundPage.78407fd7.chunk.js",
+    "static/media/logo.svg": "/react-pizza-v2/static/media/logo.4b6a82c4c6e6e607e80399b9de7d000b.svg",
+    "static/media/empty.svg": "/react-pizza-v2/static/media/empty.117ed6939f3db2168f9395d9d8a63164.svg",
+    "static/media/emptyCart.svg": "/react-pizza-v2/static/media/emptyCart.903eff3144cd70abf2614eec897d6974.svg",
+    "static/media/notfound.svg": "/react-pizza-v2/static/media/notfound.2f5b82e1774697833af09e1872fd00f2.svg",
+    "static/media/procent.svg": "/react-pizza-v2/static/media/procent.04ed43e20ce55ff90a5213790634bed7.svg",
+    "static/media/car.svg": "/react-pizza-v2/static/media/car.5061e42db226c9eb79f25dc9bd82baab.svg",
+    "static/media/arrows.svg": "/react-pizza-v2/static/media/arrows.ad2a38d144b3a19a7fd8c2fa9d19c902.svg",
+    "static/media/search.svg": "/react-pizza-v2/static/media/search.e92161551ccc5b57e6edcb3c957e2c8d.svg",
+    "static/media/cross.svg": "/react-pizza-v2/static/media/cross.b914e7bc51ced919e508230a7753941d.svg",
+    "index.html": "/react-pizza-v2/index.html",
+    "static/media/box.svg": "/react-pizza-v2/static/media/box.eb56dac9f9e5f4ac3923a1b20af13990.svg",
+    "main.502ae0e0.css.map": "/react-pizza-v2/static/css/main.502ae0e0.css.map",
+    "main.b1d7a151.js.map": "/react-pizza-v2/static/js/main.b1d7a151.js.map",
+    "NotFoundPage.1d6711e1.chunk.css.map": "/react-pizza-v2/static/css/NotFoundPage.1d6711e1.chunk.css.map",
+    "NotFoundPage.78407fd7.chunk.js.map": "/react-pizza-v2/static/js/NotFoundPage.78407fd7.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.502ae0e0.css",
+    "static/js/main.b1d7a151.js"
+  ]
+}
