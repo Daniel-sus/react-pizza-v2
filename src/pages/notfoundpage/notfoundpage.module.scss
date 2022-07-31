@@ -1,0 +1,83 @@
+@import "../../scss/variables";
+
+.contentWrapper {
+  margin: 0 auto;
+  min-width: 300px;
+  max-width: 800px;
+  height: 500px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .leftWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .title {
+      font-weight: 800;
+      font-size: 40px;
+      padding-bottom: 10px;
+    }
+    .text {
+      font-weight: 400;
+      font-size: 20px;
+      color: #999999;
+      padding-bottom: 45px;
+    }
+    .buttonsWrapper {
+      padding-right: 80px;
+      display: flex;
+      justify-content: space-between;
+      .buttonReturn {
+        width: 158px;
+        height: 50px;
+        border-radius: 25px;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 22px;
+        color: $orange;
+        border: 1px solid $orange;
+        background: #ffffff;
+      }
+      .buttonRefresh {
+        margin-left: 20px;
+        width: 130px;
+        height: 50px;
+        border-radius: 25px;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 22px;
+        color: #898989;
+        border: 1px solid #d3d3d3;
+        background: #ffffff;
+      }
+    }
+  }
+}
+@media (max-width: 1100px) {
+  .contentWrapper {
+    height: 650px;
+    margin: 0 auto;
+    flex-direction: column-reverse;
+    justify-content: center;
+    padding: 20px;
+    .leftWrapper {
+      align-items: center;
+      .title {
+        font-weight: 700;
+        font-size: 26px;
+      }
+      .text {
+        font-size: 14px;
+        padding-bottom: 25px;
+      }
+      .buttonsWrapper {
+        padding-right: 0px;
+        width: 105%;
+      }
+    }
+    .rightWrapper .image {
+      width: 240px;
+      height: 204px;
+    }
+  }
+}

@@ -1,0 +1,27 @@
+@import "../../scss/variables";
+
+.pagination {
+  padding-top: 60px;
+}
+@media (max-width: 749px) {
+  .pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding-top: 15px;
+    padding-bottom: 5px;
+  }
+}
+@media (max-width: 395px) {
+  .pagination {
+    width: 110%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: -5%;
+    padding-top: 15px;
+    padding-bottom: 5px;
+  }
+}

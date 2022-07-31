@@ -1,0 +1,195 @@
+@import "../../../scss/variables";
+
+.item {
+  width: 100%;
+  min-height: 120px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-bottom: 1px solid #f6f6f6;
+  position: relative;
+  background-color: white;
+  padding: 0px 35px;
+}
+.rightWrapper {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+.item__image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 15px;
+  .cartImage {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+.orderWrapperPrice {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 700;
+  font-size: 16px;
+}
+.priceWrapper {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.orderWrapperMiddle {
+  flex: 0.7;
+  padding-right: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  .orderWrapperTitle {
+    font-weight: 700;
+    margin-bottom: 3px;
+  }
+  .orderWrapperText {
+    font-weight: 400;
+    font-style: 14px;
+    color: #a1a1a1;
+    margin-bottom: 12px;
+  }
+}
+.quantityWrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex: 1;
+  .plusButton {
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+    border: 1px solid $orange;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.15s;
+    color: $orange;
+    &:hover {
+      background-color: $orange;
+      color: white;
+    }
+    &:active {
+      transform: translateY(1px);
+    }
+  }
+  .quanitity {
+    font-size: 16px;
+    font-weight: 700;
+    padding: 0px 9px;
+  }
+  .minusButton {
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+    border: 1px solid $orange;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.15s;
+    color: $orange;
+    &:hover {
+      background-color: $orange;
+      color: white;
+    }
+    &:active {
+      transform: translateY(1px);
+    }
+  }
+}
+.adaptiveWrapper {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.allToppingsModal {
+  position: absolute;
+  top: -10px;
+  left: 40%;
+  height: 50px;
+  background-color: #2d2d2ddd;
+  color: white;
+  font-size: 12px;
+  z-index: 30;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  border-radius: 6px;
+  padding: 10px;
+}
+@media (max-width: 760px) {
+  .priceWrapper {
+    flex: none;
+    .orderWrapperPrice {
+      align-self: flex-start;
+    }
+  }
+  .item {
+    padding: 10px 12px;
+    position: relative;
+  }
+  .item__image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5px;
+    .cartImage {
+      width: 70px;
+      height: 70px;
+    }
+  }
+  .rightWrapper {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 4px;
+    flex: 1;
+  }
+  .quantityWrapper {
+    flex: none;
+    justify-content: flex-start;
+  }
+  .adaptiveWrapper {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 70%;
+    align-items: center;
+  }
+  .orderWrapperMiddle {
+    width: 100%;
+    flex: 1.3;
+    padding-right: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .orderWrapperTitle {
+      font-weight: 700;
+      font-size: 15px;
+      margin-bottom: 3px;
+    }
+    .orderWrapperText {
+      font-weight: 400;
+      font-size: 13px;
+      color: #a1a1a1;
+      margin-bottom: 10px;
+    }
+  }
+  .orderButtonWrapper {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+  }
+}

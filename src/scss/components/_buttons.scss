@@ -1,0 +1,308 @@
+@import "../../scss/variables";
+
+.button {
+  height: 50px;
+  min-width: 100px;
+  border-radius: 25px;
+  padding: 0px 25px;
+  transition: all $duration ease-in-out;
+  cursor: pointer;
+}
+
+svg path {
+  transition: all $duration ease-in-out;
+}
+
+.mainpage__button {
+  width: 144px;
+  height: 42px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;
+  border: 1px solid $orange;
+  color: $orange;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  transition: all $duration ease-in-out;
+
+  div {
+    font-size: 24px;
+    margin-right: 6px;
+  }
+
+  &:hover {
+    color: white;
+    background-color: $orange;
+  }
+  &:active {
+    color: white;
+    transform: translateY(1px);
+    background-color: darken($orange, 8%);
+  }
+}
+.mainpage__button__change__quantity {
+  width: 40px;
+  height: 40px;
+  border: 2px solid $orange;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: $duration;
+  &:hover {
+    color: white;
+    background-color: $orange;
+    svg {
+      path {
+        fill: white;
+      }
+    }
+  }
+  &:active {
+    transform: translateY(1px);
+    background-color: darken($orange, 8%);
+  }
+}
+.cart__button {
+  background-color: white;
+  width: 32px;
+  height: 32px;
+  border: 2px solid $orange;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all $duration ease-in-out;
+
+  &.cart__minus {
+    svg path:first-of-type {
+      display: none;
+    }
+    &:disabled {
+      opacity: 0.4;
+      border-color: #787878;
+      &:active {
+        transform: none;
+      }
+      &:hover {
+        background-color: transparent;
+        svg path {
+          fill: #787878;
+        }
+      }
+      svg path {
+        fill: #787878;
+      }
+    }
+  }
+  &:hover {
+    color: white;
+    background-color: $orange;
+    svg {
+      path {
+        fill: white;
+      }
+    }
+  }
+  &:active {
+    transform: translateY(1px);
+    background-color: darken($orange, 8%);
+  }
+}
+.cart__button__delete {
+  width: 32px;
+  height: 32px;
+  border: 2px solid #d7d7d7;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all $duration ease-in-out;
+  &:hover {
+    background-color: #000000;
+    border: 2px solid #000000;
+    svg path {
+      fill: white;
+    }
+  }
+  &:active {
+    transform: translateY(1px);
+    background-color: #000000;
+    border: 2px solid #000000;
+  }
+}
+
+.button__return {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #d3d3d3;
+  border-radius: 50%;
+  transition: all $duration;
+  margin-right: 15px;
+  svg {
+    margin-right: 1px;
+  }
+  &:hover {
+    background-color: #000000;
+    border: 1px solid #000000;
+    svg path {
+      stroke: white;
+    }
+  }
+  &:active {
+    transform: translateY(1px);
+  }
+}
+.button__modal__add__to__cart {
+  cursor: pointer;
+  width: 100%;
+  height: 50px;
+  border-radius: 30px;
+  background-color: $orange;
+  color: white;
+  font-size: 20px;
+  font-weight: 400;
+  border: none;
+  transition: $duration;
+  &:hover {
+    background-color: darken($orange, 4%);
+  }
+  &:active {
+    transform: translateY(1px);
+    background-color: darken($orange, 8%);
+  }
+}
+.toMainPageBtn {
+  background-color: transparent;
+  border: 1px solid #c7c7c7;
+  color: #898989;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  transition: all $duration ease-in-out;
+
+  &:hover {
+    background-color: #000000;
+    color: white;
+  }
+  &:active {
+    transform: translateY(1px);
+  }
+}
+.toOrdersBtn {
+  background-color: transparent;
+  border: 1px solid $orange;
+  color: $orange;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  transition: all $duration ease-in-out;
+  svg {
+    transition: all $duration ease-in-out;
+  }
+  svg path {
+    transition: all $duration ease-in-out;
+  }
+  &:hover {
+    background-color: $orange;
+    color: white;
+  }
+  &:active {
+    transform: translateY(1px);
+    background-color: darken($orange, 8%);
+  }
+}
+.orange {
+  padding: 10px 20px;
+  width: 200px;
+  padding-right: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border: 1px solid $orange;
+  color: $orange;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  transition: all $duration ease-in-out;
+  svg {
+    margin-right: 15px;
+  }
+  svg path {
+    transition: all $duration ease-in-out;
+  }
+  &:hover {
+    background-color: $orange;
+    color: white;
+    svg path {
+      stroke: white;
+    }
+  }
+  &:active {
+    transform: translateY(1px);
+    background-color: darken($orange, 8%);
+  }
+}
+.gray {
+  background-color: transparent;
+  border: 1px solid #c7c7c7;
+  color: #898989;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  &:hover {
+    border: 1px solid black;
+    background-color: #000000;
+    color: white;
+  }
+  &:active {
+    transform: translateY(1px);
+  }
+}
+.go__back__button {
+  padding: 10px 20px;
+  border-radius: 25px;
+  border: 1px solid #d3d3d3;
+  color: #d3d3d3;
+  font-weight: 600;
+  font-size: 16px;
+  transition: all $duration ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 210px;
+  padding-right: 35px;
+  svg {
+    transition: all $duration ease-in-out;
+    margin-right: 15px;
+  }
+  &:hover {
+    background-color: #000000;
+    border: 1px solid #000000;
+    color: white;
+    svg path {
+      stroke: white;
+    }
+  }
+  &:active {
+    transform: translateY(1px);
+  }
+}
+
+@media (max-width: 1100px) {
+  .button__modal__add__to__cart {
+    height: 40px;
+    width: 100%;
+  }
+  .button {
+    width: 152px;
+    font-size: 14px;
+    height: 45px;
+  }
+}

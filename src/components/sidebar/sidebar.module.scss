@@ -1,0 +1,101 @@
+@import "../../scss/variables";
+
+.sidebar {
+  width: 395px;
+  height: 100%;
+  position: fixed;
+  right: 0;
+  top: 0;
+  background-color: #f4f1ee;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  z-index: 10;
+  overflow: hidden;
+  overflow-x: none;
+
+  .topWrapper {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .cartTitle {
+      font-size: 20px;
+      font-weight: 700;
+    }
+  }
+
+  .itemsWrapper {
+    flex: 1 auto;
+    overflow: auto;
+    overflow-x: none;
+  }
+
+  .checkout {
+    min-height: 207px;
+    padding: 20px 35px 20px 35px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .itogo {
+      display: flex;
+      .dots {
+        flex: 1 auto;
+        border-bottom: 1px dashed #dfdfdf;
+        margin: 0px 6px;
+      }
+      .checkoutPrice {
+        font-weight: 700;
+        font-size: 18px;
+      }
+    }
+    .checkoutButton {
+      height: 55px;
+      background-color: $orange;
+      color: #fff;
+      font-size: 18px;
+      font-weight: 700;
+      border-radius: 30px;
+      display: flex;
+
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+.cartempty {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
+.sidebarClosed {
+  width: 395px;
+  height: 100%;
+  position: fixed;
+  right: 0;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  z-index: 10;
+  background-color: #fff;
+}
+.cross {
+  opacity: 0.3;
+  transition: 0.3s;
+}
+.cross:hover {
+  transform: scale(1.17);
+}
+@media (max-width: 749px) {
+  .sidebar {
+    width: 100%;
+  }
+  .sidebarClosed {
+    width: 100%;
+  }
+}
