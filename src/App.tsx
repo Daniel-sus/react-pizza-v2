@@ -95,7 +95,7 @@ function App() {
             }
           />
           <Route
-            path="checkout"
+            path="/checkout"
             element={
               // <Suspense fallback={<div>Идёт загрузка...</div>}>
               <CheckOutPage />
@@ -103,7 +103,7 @@ function App() {
             }
           />
           <Route
-            path="orders"
+            path="/orders"
             element={
               // <Suspense fallback={<div>Идёт загрузка...</div>}>
               <OrdersPage />

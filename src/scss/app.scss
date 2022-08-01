@@ -60,6 +60,16 @@ code {
   font-size: 18px !important;
   font-weight: 400 !important;
 }
+.css-1bpzuib.Mui-selected {
+  background-color: $orange !important;
+  color: white !important;
+}
+.css-1bpzuib {
+  border: 1px solid $orange !important;
+  color: $orange !important;
+  font-size: 18px !important;
+  font-weight: 400 !important;
+}
 @media (max-width: 1400px) {
   .pizzasWrapper {
     grid-template-columns: 1fr 1fr 1fr;
