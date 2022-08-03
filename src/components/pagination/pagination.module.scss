@@ -1,27 +1,39 @@
 @import "../../scss/variables";
 
 .pagination {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   padding-top: 60px;
+  justify-items: center;
+  gap: 30px;
+  .wrapper {
+    width: 288px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+  }
+}
+@media (max-width: 1400px) {
+  .pagination {
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-bottom: 20px;
+  }
+}
+@media (max-width: 1060px) {
+  .pagination {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 @media (max-width: 749px) {
   .pagination {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
+    grid-template-columns: 1fr;
     padding-top: 15px;
     padding-bottom: 5px;
-  }
-}
-@media (max-width: 395px) {
-  .pagination {
-    width: 110%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    left: -5%;
-    padding-top: 15px;
-    padding-bottom: 5px;
+    .wrapper {
+      width: 288px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
   }
 }

@@ -136,7 +136,9 @@ const Modal: React.FC<ModalProps> = ({
           <div className={styles.rightColumn}>
             <div className={styles.rightColumnWrapper}>
               <h1 className={styles.title}>
-                {modalData.title} {modalData.iconUrl && "🌶️"}
+                {modalData.title}{" "}
+                {modalData.iconUrl &&
+                  (modalData.iconUrl === "vege" ? "🌱" : "🌶️")}
               </h1>
               <p className={styles.sizes}>
                 {setSizeName(modalData.sizes)} {modalData.sizes} сm, {""}

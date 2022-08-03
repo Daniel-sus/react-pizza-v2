@@ -61,9 +61,10 @@ const Item: React.FC<ItemProps> = ({
   return (
     <div className={styles.item}>
       <div className={styles.topItemWrapper}>
-        {iconUrl ? (
-          <img className={styles.pepper} src={iconUrl} alt="pepper" />
-        ) : null}
+        {iconUrl &&
+          (iconUrl === "vege" ? null : (
+            <img className={styles.pepper} src={iconUrl} alt="pepper" />
+          ))}
         <img
           onClick={onHandleClickCard}
           className={styles.itemImage}
@@ -74,7 +75,12 @@ const Item: React.FC<ItemProps> = ({
 
       <div className={styles.itemTitleWrapper} onClick={onHandleClickCard}>
         <h2 className={styles.itemTitle}>{title}</h2>
-        {iconUrl ? <h2 style={{ marginLeft: 7 }}>🌶️</h2> : null}
+        {iconUrl &&
+          (iconUrl === "vege" ? (
+            <h2 style={{ marginLeft: 7 }}>🌱</h2>
+          ) : (
+            <h2 style={{ marginLeft: 7 }}>🌶️</h2>
+          ))}
       </div>
       <div className={styles.pizzaOptionsWrapper}>
         <ul>

@@ -13,6 +13,7 @@ import { CartItemType } from "../../../redux-toolkit/reducers/cart/types";
 const CheckOutItem: React.FC<CartItemType> = ({
   id,
   imageUrl,
+  iconUrl,
   title,
   text,
   price,
@@ -65,7 +66,9 @@ const CheckOutItem: React.FC<CartItemType> = ({
       </div>
       <div className={styles.rightWrapper}>
         <div className={styles.orderWrapperMiddle}>
-          <p className={styles.orderWrapperTitle}>{title}</p>
+          <p className={styles.orderWrapperTitle}>
+            {title} {iconUrl && (iconUrl === "vege" ? "🌱" : "🌶️")}
+          </p>
           <p
             className={styles.orderWrapperText}
             onClick={() => setIsAllToppingsOpen(!isAllToppingsOpen)}

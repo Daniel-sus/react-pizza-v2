@@ -12,6 +12,7 @@ const OrderItem: React.FC<CartItemType> = ({
   sizes,
   toppings,
 }) => {
+  console.log(iconUrl);
   return (
     <div className={styles.item}>
       <div className={styles.image__wrapper}>
@@ -19,7 +20,7 @@ const OrderItem: React.FC<CartItemType> = ({
       </div>
       <div className={styles.description__wrapper}>
         <h3 className={styles.title}>
-          {title} {iconUrl && "🌶️"}
+          {title} {iconUrl && (iconUrl === "vege" ? "🌱" : "🌶️")}
         </h3>
         <p className={styles.description}>
           {setSizeName(sizes)} {sizes} cm, {types}{" "}

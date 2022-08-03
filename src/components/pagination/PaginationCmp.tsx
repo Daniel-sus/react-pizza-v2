@@ -17,13 +17,15 @@ const PaginationCmp = () => {
 
   return (
     <div className={styles.pagination}>
-      <Pagination
-        count={5}
-        page={pageNumber}
-        onChange={handlePagination}
-        variant="outlined"
-        size="large"
-      />
+      <div className={styles.wrapper}>
+        <Pagination
+          count={4}
+          page={pageNumber}
+          onChange={handlePagination}
+          variant="outlined"
+          size="large"
+        />
+      </div>
     </div>
   );
 };
